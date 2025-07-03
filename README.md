@@ -19,6 +19,7 @@
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/ghostoptimizer/elluphant_idx/tree/master/0001-two-sum) |
+| [0004-median-of-two-sorted-arrays](https://github.com/ghostoptimizer/elluphant_idx/tree/master/0004-median-of-two-sorted-arrays) |
 ## Hash Table
 |  |
 | ------- |
@@ -37,4 +38,12 @@
 |  |
 | ------- |
 | [0242-valid-anagram](https://github.com/ghostoptimizer/elluphant_idx/tree/master/0242-valid-anagram) |
+## Binary Search
+|  |
+| ------- |
+| [0004-median-of-two-sorted-arrays](https://github.com/ghostoptimizer/elluphant_idx/tree/master/0004-median-of-two-sorted-arrays) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0004-median-of-two-sorted-arrays](https://github.com/ghostoptimizer/elluphant_idx/tree/master/0004-median-of-two-sorted-arrays) |
 <!---LeetCode Topics End-->
