@@ -5,6 +5,7 @@
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/ghostoptimizer/elluphant_idx/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0242-valid-anagram](https://github.com/ghostoptimizer/elluphant_idx/tree/master/0242-valid-anagram) |
 | [0394-decode-string](https://github.com/ghostoptimizer/elluphant_idx/tree/master/0394-decode-string) |
 ## Stack
 |  |
@@ -23,6 +24,7 @@
 | ------- |
 | [0001-two-sum](https://github.com/ghostoptimizer/elluphant_idx/tree/master/0001-two-sum) |
 | [0003-longest-substring-without-repeating-characters](https://github.com/ghostoptimizer/elluphant_idx/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0242-valid-anagram](https://github.com/ghostoptimizer/elluphant_idx/tree/master/0242-valid-anagram) |
 ## Sliding Window
 |  |
 | ------- |
@@ -31,4 +33,8 @@
 |  |
 | ------- |
 | [0009-palindrome-number](https://github.com/ghostoptimizer/elluphant_idx/tree/master/0009-palindrome-number) |
+## Sorting
+|  |
+| ------- |
+| [0242-valid-anagram](https://github.com/ghostoptimizer/elluphant_idx/tree/master/0242-valid-anagram) |
 <!---LeetCode Topics End-->
