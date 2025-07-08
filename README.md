@@ -1,4 +1,4 @@
-# elluphant_idx
+# daily-dsa
 <!---LeetCode Topics Start-->
 # LeetCode Topics
 ## String
