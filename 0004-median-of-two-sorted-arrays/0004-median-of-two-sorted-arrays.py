@@ -1,32 +1,26 @@
 class Solution:
-    def findMedianSortedArrays(self, nums1, nums2):
-        n = len(nums1)
-        m = len(nums2)
-        i = 0
-        j = 0
-        m1 = 0
-        m2 = 0
+    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+        if len(nums1) > len(nums2):
+            return self.findMedianSortedArrays(nums2, nums1)
 
-        # Find median.
-        for count in range(0, (n + m) // 2 + 1):
-            m2 = m1
-            if i < n and j < m:
-                if nums1[i] > nums2[j]:
-                    m1 = nums2[j]
-                    j += 1
+        len1, len2 = len(nums1), len(nums2)
+        left, right = 0, len1
+
+        while left <= right:
+            part1 = (left + right) // 2
+            part2 = (len1 + len2 + 1) // 2 - part1
+
+            max_left1 = float('-inf') if part1 == 0 else nums1[part1 - 1]
+            min_right1 = float('inf') if part1 == len1 else nums1[part1]
+            max_left2 = float('-inf') if part2 == 0 else nums2[part2 - 1]
+            min_right2 = float('inf') if part2 == len2 else nums2[part2]
+
+            if max_left1 <= min_right2 and max_left2 <= min_right1:
+                if (len1 + len2) % 2 == 0:
+                    return (max(max_left1, max_left2) + min(min_right1, min_right2)) / 2
                 else:
-                    m1 = nums1[i]
-                    i += 1
-            elif i < n:
-                m1 = nums1[i]
-                i += 1
+                    return max(max_left1, max_left2)
+            elif max_left1 > min_right2:
+                right = part1 - 1
             else:
-                m1 = nums2[j]
-                j += 1
-
-        # Check if the sum of n and m is odd.
-        if (n + m) % 2 == 1:
-            return float(m1)
-        else:
-            ans = float(m1) + float(m2)
-            return ans / 2.0
+                left = part1 + 1
